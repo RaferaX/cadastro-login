@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f6fb; /* Cor de fundo mais suave */
+}
+
+.container {
+    background-color: #ffffff;
+    width: 450px;
+    padding: 2rem;
+    margin: 50px auto;
+    border-radius: 12px; /* Borda mais suave */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+form {
+    margin: 0 2rem;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 0.6rem;
+    color: #4c6b8d; /* Cor mais suave para o título */
+}
+
+input {
+    flex: 10;
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 0.8em 0.5em;
+    border-left: solid 1px hsla(0, 0%, 0%, 0.3);
+    border-radius: 8px; /* Bordas mais suaves */
+}
+
+input:focus {
+    border-left: solid 2px #6a80a6; /* Azul mais suave */
+    outline: none;
+}
+
+.input-group {
+    padding: 1.2% 0;
+    position: relative;
+    background-color: hsla(227, 63%, 18%, 0.08);
+    margin: 1em auto;
+    border-radius: 12px;
+    display: flex;
+    padding: 0.8em 0.4em;
+}
+
+.error {
+    position: absolute;
+    left: 2em;
+    bottom: -1.5em;
+}
+
+.error p {
+    color: #d9534f; /* Cor de erro mais clara */
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+}
+
+.input-group:focus-within {
+    border: 2px solid #4a90e2; /* Azul mais vibrante ao focar */
+}
+
+.input-group i {
+    flex: 1;
+    color: #3a3a3a; /* Cor mais neutra para os ícones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group:focus-within i {
+    color: #4a90e2; /* Azul para ícones no foco */
+}
+
+.input-group.password i:first-child {
+    flex: 1.1;
+}
+
+.recover {
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recover a {
+    text-decoration: none;
+    color: #4a90e2; /* Cor mais viva para links de recuperação */
+}
+
+.recover a:hover {
+    color: #3b74d4; /* Cor mais forte para hover */
+    text-decoration: underline;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 0.7em 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: #4a90e2; /* Azul mais suave para o botão */
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0.5em;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #2a70b7; /* Cor mais intensa para hover */
+}
+
+.or {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #7f7f7f; /* Cor mais neutra para o "ou" */
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons i {
+    color: #4a90e2;
+    padding: 0.9rem 1.7rem;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: 2px solid #e0e7f1;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    background: #2a70b7;
+    font-size: 1.7rem;
+    border: 2px solid #4a90e2;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+}
+
+button {
+    color: #4a90e2;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    text-decoration: underline;
+    color: #2a70b7; /* Cor mais intensa para hover */
+}
+
+.error-main {
+    background-color: #d9534f; /* Cor de erro mais vibrante */
+    padding: 0.5em 1em;
+    border-radius: 12px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.error-main p {
+    color: white;
+    text-align: center;
+}
+
+.user-details {
+    margin-top: 5em;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.user-details p {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.user-details p:first-child {
+    text-decoration: underline;
+    margin-bottom: 2em;
+    font-weight: 600;
+}
+
+.user-details a {
+    display: block;
+    text-align: center;
+    text-decoration-color: #4a90e2;
+    color: #4a90e2;
+    transition: 0.3s;
+}
+
+.user-details a:hover {
+    color: #2a70b7;
+    text-decoration-color: #2a70b7;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        box-shadow: unset;
+    }
+}

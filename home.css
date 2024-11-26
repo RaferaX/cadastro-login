@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f6fb; /* Cor de fundo suave */
+    color: #333; /* Cor de texto mais suave */
+}
+
+.user-details {
+    background-color: #ffffff; /* Fundo branco para a área do usuário */
+    width: 450px;
+    padding: 2rem;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.user-details p {
+    font-size: 1.3rem;
+    color: #444; /* Texto escuro para contraste */
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.user-details p:first-child {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #4a90e2; /* Cor do título do usuário */
+}
+
+.user-details a {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 1.5em;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.user-details a:hover {
+    background-color: #2a70b7; /* Cor do botão quando hover */
+    text-decoration: none;
+}
+
+.user-details a:active {
+    background-color: #1a4d74; /* Cor do botão quando pressionado */
+}
+
+.user-details a:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 767px) {
+    .user-details {
+        width: 90%; /* Ajusta o tamanho para dispositivos móveis */
+        padding: 1.5rem;
+    }
+
+    .user-details p {
+        font-size: 1.1rem;
+    }
+
+    .user-details a {
+        font-size: 1rem;
+        padding: 0.7em 1.2em;
+    }
+}
